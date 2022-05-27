@@ -1,0 +1,30 @@
+<div class="mx-auto w-8/12 relative">
+  <div class="border-slate-600 rounded-xl border-4">
+    <div class="w-full flex space-x-2 p-4">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-8.5 -7 24 24" class="h-6 w-6" fill="currentColor"><path d="M2 5.455v2.727h1.5c.828 0 1.5-.61 1.5-1.364 0-.753-.672-1.363-1.5-1.363H2zm3.514-1.24C6.413 4.793 7 5.744 7 6.819 7 8.575 5.433 10 3.5 10H0V.91C0 .406.448 0 1 0h2c1.657 0 3 1.221 3 2.727 0 .55-.179 1.06-.486 1.489zM2 1.819v1.818h1c.552 0 1-.407 1-.909s-.448-.909-1-.909H2z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-7.5 -7 24 24" class="h-6 w-6" fill="currentColor"><path d="M2.273 8l1.95-6H3a1 1 0 1 1 0-2h5a1 1 0 1 1 0 2H6.326l-1.95 6H6a1 1 0 1 1 0 2H1a1 1 0 1 1 0-2h1.273z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-7 -6.5 24 24" class="h-6 w-6" fill="currentColor"><path d="M1.5 10h7a.5.5 0 1 1 0 1h-7a.5.5 0 1 1 0-1zM7 2a1 1 0 1 1 0-2h2a1 1 0 1 1 0 2v3a4 4 0 1 1-8 0V2a1 1 0 1 1 0-2h2a1 1 0 1 1 0 2v3a2 2 0 1 0 4 0V2z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -7 24 24" class="h-6 w-6" fill="currentColor"><path d="M3 0h8a1 1 0 0 1 0 2H3a1 1 0 1 1 0-2zm0 8h8a1 1 0 0 1 0 2H3a1 1 0 1 1 0-2zM1 4h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -7 24 24" class="h-6 w-6" fill="currentColor"><path d="M1 0h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2zm0 8h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2zm0-4h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -7 24 24" class="h-6 w-6" fill="currentColor"><path d="M1 0h6a1 1 0 1 1 0 2H1a1 1 0 1 1 0-2zm0 8h8a1 1 0 1 1 0 2H1a1 1 0 1 1 0-2zm0-4h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -7 24 24" class="h-6 w-6" fill="currentColor"><path d="M7 0h6a1 1 0 0 1 0 2H7a1 1 0 1 1 0-2zM5 8h8a1 1 0 0 1 0 2H5a1 1 0 1 1 0-2zM1 4h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2z"></path></svg>
+    </div>
+    <div class="element w-full flex flex-col h-96"></div>
+  </div>
+</div>
+<script type="module">
+  import { Editor } from 'https://cdn.skypack.dev/@tiptap/core?min'
+  import StarterKit from 'https://cdn.skypack.dev/@tiptap/starter-kit?min'
+  const editor = new Editor({
+    element: document.querySelector('.element'),
+    editorProps: {
+      attributes: {
+        class: 'prose prose-sm sm:prose lg:prose-lg xl:prose-2xl p-4 mx-auto focus:outline-none w-full flex-grow',
+      },
+    },
+    extensions: [
+      StarterKit,
+    ],
+    content: '<p>Hello World!</p>',
+  })
+</script>

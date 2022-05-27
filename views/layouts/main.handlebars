@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saturn | A Blog</title>
+  {{{_sections.styles}}}
+  {{!-- <link href="/output.css" rel="stylesheet"> --}}
+</head>
+<body class="h-screen">
+  <div class="min-h-screen bg-gray-50 py-6 flex flex-col relative overflow-hidden sm:py-12">
+    <img src="https://play.tailwindcss.com/img/beams.jpg" alt="" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-none" width="1308" />
+  {{> nav}}
+  {{{body}}}
+  </div>
+  {{{_sections.script}}}
+</body>
+
+</html>
